@@ -18,8 +18,8 @@ struct ContentView: View {
                         day in
                         NavigationLink("Day \(day.number)",
                                        destination: {
-                            DayView(day: day)
-                        })
+                                            DayView(day: day)
+                                        })
                     })
                 }
             }.navigationTitle("Home")
