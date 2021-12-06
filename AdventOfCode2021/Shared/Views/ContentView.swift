@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-let days: [Day] = [Day1()]
-
 struct ContentView: View {
+    var puzzle: Puzzle
+    
     var body: some View {
         NavigationView {
             List {
                 Section(header: Text("Advent of Code 2021")){
-                    ForEach(days, id: \.self.number, content: {
+                    ForEach(puzzle.days, content: {
                         day in
                         NavigationLink("Day \(day.number)",
                                        destination: {
-                                            DayView(day: day)
-                                        })
+                            DayView(day: day)
+                        })
                     })
                 }
             }.navigationTitle("Home")
@@ -27,10 +27,10 @@ struct ContentView: View {
     }
 }
 
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let puzzle = Puzzle()
+        
+        ContentView(puzzle: puzzle)
     }
 }

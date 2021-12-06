@@ -15,6 +15,12 @@
 		A04FC3FF275908950019B417 /* day1.txt in Resources */ = {isa = PBXBuildFile; fileRef = A04FC3FD275908950019B417 /* day1.txt */; };
 		A04FC40127590CE50019B417 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FC40027590CE50019B417 /* DayView.swift */; };
 		A04FC40227590CE50019B417 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FC40027590CE50019B417 /* DayView.swift */; };
+		A04FC409275958AB0019B417 /* day2.txt in Resources */ = {isa = PBXBuildFile; fileRef = A04FC408275958AB0019B417 /* day2.txt */; };
+		A04FC40A275958AB0019B417 /* day2.txt in Resources */ = {isa = PBXBuildFile; fileRef = A04FC408275958AB0019B417 /* day2.txt */; };
+		A04FC40C275958D20019B417 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FC40B275958D20019B417 /* Day2.swift */; };
+		A04FC40D275958D20019B417 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FC40B275958D20019B417 /* Day2.swift */; };
+		A04FC40F275A43EC0019B417 /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FC40E275A43EC0019B417 /* Puzzle.swift */; };
+		A04FC410275A43EC0019B417 /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04FC40E275A43EC0019B417 /* Puzzle.swift */; };
 		A07CCC6B275761CF001CB549 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CCC6A275761CF001CB549 /* Tests_iOS.swift */; };
 		A07CCC6D275761CF001CB549 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CCC6C275761CF001CB549 /* Tests_iOSLaunchTests.swift */; };
 		A07CCC77275761CF001CB549 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CCC76275761CF001CB549 /* Tests_macOS.swift */; };
@@ -49,6 +55,9 @@
 		A04FC3F92759068B0019B417 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
 		A04FC3FD275908950019B417 /* day1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day1.txt; sourceTree = "<group>"; };
 		A04FC40027590CE50019B417 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		A04FC408275958AB0019B417 /* day2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = day2.txt; sourceTree = "<group>"; };
+		A04FC40B275958D20019B417 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
+		A04FC40E275A43EC0019B417 /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
 		A07CCC52275761CC001CB549 /* AdventOfCode2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode2021App.swift; sourceTree = "<group>"; };
 		A07CCC53275761CC001CB549 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A07CCC54275761CF001CB549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				A04FC3FD275908950019B417 /* day1.txt */,
+				A04FC408275958AB0019B417 /* day2.txt */,
 			);
 			path = Inputs;
 			sourceTree = "<group>";
@@ -108,6 +118,8 @@
 			children = (
 				A04FC3F6275906520019B417 /* Day.swift */,
 				A04FC3F92759068B0019B417 /* Day1.swift */,
+				A04FC40B275958D20019B417 /* Day2.swift */,
+				A04FC40E275A43EC0019B417 /* Puzzle.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -307,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07CCC7E275761CF001CB549 /* Assets.xcassets in Resources */,
+				A04FC409275958AB0019B417 /* day2.txt in Resources */,
 				A04FC3FE275908950019B417 /* day1.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07CCC7F275761CF001CB549 /* Assets.xcassets in Resources */,
+				A04FC40A275958AB0019B417 /* day2.txt in Resources */,
 				A04FC3FF275908950019B417 /* day1.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +356,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04FC3FA2759068B0019B417 /* Day1.swift in Sources */,
+				A04FC40F275A43EC0019B417 /* Puzzle.swift in Sources */,
+				A04FC40C275958D20019B417 /* Day2.swift in Sources */,
 				A04FC40127590CE50019B417 /* DayView.swift in Sources */,
 				A07CCC7C275761CF001CB549 /* ContentView.swift in Sources */,
 				A07CCC7A275761CF001CB549 /* AdventOfCode2021App.swift in Sources */,
@@ -354,6 +370,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04FC3FB2759068B0019B417 /* Day1.swift in Sources */,
+				A04FC410275A43EC0019B417 /* Puzzle.swift in Sources */,
+				A04FC40D275958D20019B417 /* Day2.swift in Sources */,
 				A04FC40227590CE50019B417 /* DayView.swift in Sources */,
 				A07CCC7D275761CF001CB549 /* ContentView.swift in Sources */,
 				A07CCC7B275761CF001CB549 /* AdventOfCode2021App.swift in Sources */,

@@ -7,7 +7,8 @@
 
 import Foundation
 
-class Day {
+class Day: Identifiable, ObservableObject {
+    let id = UUID()
     let number: Int
     let bundle: Bundle
     var data: [String]
@@ -23,10 +24,16 @@ class Day {
             if let filePath = bundle.path(forResource: "day\(number)", ofType: "txt") {
                 let contents = try String(contentsOfFile: filePath)
                 data = contents.components(separatedBy: .newlines)
+                
+                convertData()
             }
         } catch {
             return
         }
+    }
+    
+    func convertData() {
+        // Empty function that could be implemented by the implementation classes
     }
     
     func assignment1() -> String {

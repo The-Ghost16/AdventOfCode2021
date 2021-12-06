@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct AdventOfCode2021App: App {
+    @StateObject private var puzzle = Puzzle()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(puzzle: puzzle)
         }
     }
 }

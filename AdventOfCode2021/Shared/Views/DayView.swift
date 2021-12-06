@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct DayView: View {
-    let day: Day
+    var day: Day
+    
+    init(day: Day) {
+        self.day = day
+        self.day.readFile()
+    }
     
     var body: some View {
         VStack {
@@ -41,11 +46,5 @@ struct DayView: View {
             
             Spacer()
         }
-    }
-}
-
-struct DayView_Previews: PreviewProvider {
-    static var previews: some View {
-        DayView(day: Day(number: 0))
     }
 }

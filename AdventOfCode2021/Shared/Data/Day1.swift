@@ -15,12 +15,6 @@ class Day1: Day {
     }
     
     override func assignment1() -> String {
-        readFile()
-        
-        if(data.isEmpty) {
-            return "File not read correctly!"
-        }
-        
         var previousNumber = -1
         var count = 0
         for (index, line) in data.enumerated() {
@@ -44,12 +38,6 @@ class Day1: Day {
     }
     
     override func assignment2() -> String {
-        readFile()
-        
-        if(data.isEmpty) {
-            return "File not read correctly!"
-        }
-        
         var input: [Int] = []
         for line in data {
             if let number = Int(line) {
